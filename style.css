@@ -125,6 +125,9 @@ margin-top: 240px;
   text-align:right;
   font-style:bold;
 }
+#phoneNumdesc{
+  padding-top:9%;
+}
 @media (max-width:1364px){
   .logo{
   justify-content:center;
@@ -145,8 +148,12 @@ margin-top: 240px;
   margin-left:40%;
   margin-right:0;
   }
-  
+  #phoneNumdesc{
+    padding-top:5%;
+  }
 }
+ 
+
 .gallerydesc{
   background:white;
   margin-left: 100px;
