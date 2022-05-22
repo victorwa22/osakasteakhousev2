@@ -14,11 +14,12 @@ body{
 }
 .logo{
   position:absolute;
+  margin-left:350px;
   z-index:-1;
-  width:auto;
-  height:auto;
   top:0;
-  margin-left: 20%;
+  display:flex;
+  justify-content:center;
+ 
 }
 .bg-image{
   background-image: url("120542.jpg");
@@ -126,30 +127,39 @@ margin-top: 240px;
   font-style:bold;
 }
 #phoneNumdesc{
-  padding-top:7.25%;
+  padding-top:25px;
 }
-@media (max-width:1364px){
+@media screen and (max-width:1628px){
   .logo{
-  justify-content:center;
-  z-index:-1;
-  width:auto;
-  height:auto;
-  top:0;
-  margin-left:37%;
-  margin-right:0;
+    position:absolute;
+    margin-left:225px;
+    z-index:-1;
+    top:0;
+    display:flex;
+    justify-content:center;
+  }
+}
+@media screen and (max-width:1364px){
+  .logo{
+    position:static;
+    margin:auto;
+    display:flex;
+   justify-content:center;
+    margin-bottom:-200px;
   }
   .desc{
     position: relative;
     top: 225px;
     color: rgb(0, 0, 0);
     font-size:26px;
+    display:block;
     text-align:center;
     justify-content:center;
-  margin-left:40%;
-  margin-right:0;
+    right:0;
+  
   }
   #phoneNumdesc{
-    padding-top:5%;
+    padding-top:25px;
   }
 }
  
