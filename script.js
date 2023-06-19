@@ -1,3 +1,35 @@
+let slideIndex = 0;
+const slides = document.querySelectorAll(".slideshow img");
+
+function showSlide(n) {
+  slideIndex = (n + slides.length) % slides.length;
+
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+
+  slides[slideIndex].style.display = "block";
+}
+
+function changeSlide(n) {
+    clearInterval(intervalID);
+  showSlide(slideIndex + n);
+  intervalID = setInterval(() => {
+    changeSlide(1);
+  }, 5000);
+}
+
+// Automatic slideshow
+intervalID = setInterval(() => {
+  changeSlide(1);
+}, 5000);
+
+// Show the initial slide
+showSlide(slideIndex);
+
+
+
+
 const tabs = document.querySelectorAll('[data-tab-target]')
 const tabContents = document.querySelectorAll('[data-tab-content]')
 
