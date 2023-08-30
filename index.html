@@ -1,21 +1,17 @@
 <!DOCTYPE html>
 <html>
     <link rel="stylesheet" href="style.css">
-    <link href='https://fonts.googleapis.com/css?family=DM Sans' rel='stylesheet'>
+    <head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&display=swap');
+      </style>
+    </head>
     <script src="script.js" defer></script>
     <title>Osaka Japanese Steakhouse - Sushi and Steakhouse | Dayton, OH</title>
     
   
     <body>
-        <div class="bg-image">
-            <style>
-                body{
-                    background-image:url("images/osaka\ background\ edited.jpg");
-                    background-attachment:fixed;
-                    background-position-x: 0px; 
-                }
-            </style>
-        </div>
+        
        
            
         
@@ -24,8 +20,12 @@
             <a href="index.html"><img class ="logoimg" src="Osaka Logo.png" alt="Logo"></a>
 
         </div>
+        <div class="dropdown">
+            <div class="btnlines">
+                <button onclick="toggleDropdown()" class="dropbtn"><span></span></button> 
+            </div>
         <div class = "tabNames">
-            <ul class="tabs">
+            <ul id = "myDropdown" class="dropdown-content tabs">
                 <li class="activet"><a href="index.html">Home</a></li>
                 <li class="tab"><a href="menu.html">Menu</a></li>
                 <li class="tab"><a href="specials.html">Specials</a></li>
@@ -35,12 +35,12 @@
                 
                 
                 
-
+                
             </ul> 
 
 
         </div>
-
+        </div>
 
     </div>
     <div class = "intro">
@@ -49,7 +49,7 @@
                 Introducing Dayton to a 
             </div>
             <div class="newlevel">
-                New Level<div class="hr1"></div><div class="hr2"></div>
+                 New Level<div class="hr1"></div><div class="hr2"></div>
             </div>
             <div class="introtext2">
                 of Sushi and Hibachi Excellence
@@ -60,9 +60,11 @@
         </div>
         <div class="slideshow-container">
             <div class="slideshow">
-              <img src="images/imageedit_12_7617094555.jpg" alt="Hibachi Fire">
-              <img src="images/rice heart.jpg" alt="Rice Heart">
-              <img src="images/Sushi & Sashimi Boat A 2.JPG" alt="Sushi & Sashimi Boat">
+              <img class= "slide" src="images/imageedit_12_7617094555.jpg" alt="Hibachi Fire">
+              <img class= "slide" src="images/American Dream.JPG" alt="American Dream">
+              <img class= "slide" src="images/red had.jpg" alt="Red Had Roll">
+              <img class= "slide" src="images/Rock N' Roll.JPG" alt="Rock N' Roll">
+              <img class= "slide" src="images/Sushi & Sashimi Boat A 2.JPG" alt="Sushi & Sashimi Boat">
             </div>
           
             <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
@@ -70,7 +72,7 @@
         </div>
 
 
-    </div>
+    </div><br>
 
     <div class="intro2whole">
         <div class="intro2">
@@ -95,7 +97,7 @@
         </div>
     </div>
 
-    <div class="intro">
+    <div class="intro3whole">
         <div class="intro3">
             Selections to please every palate. <br>
             <div class="intro3desc">
@@ -105,7 +107,7 @@
         <div class="intro3pic">
             <img src="images/GINGER SALMON 2.JPG">
         </div>
-    </div>
+    </div><br>
 
     
   
@@ -138,158 +140,13 @@
                     
                     
                     
-                    <div class="nav-auto">
-                        <div class ="auto-btn1">
-                    </div>
-                    <div class ="auto-btn2">
-                    </div>
-                    <div class ="auto-btn3">
-                    </div>
-                    <div class ="auto-btn4">
-                    </div>
-                    <div class ="auto-btn5">
-                    </div>
-                </div>
-            </div>
-                
-
-                    <div class="navigation">
-                        <label for="radio1" class="btn"></label>
-                        <label for="radio2" class="btn"></label>
-                        <label for="radio3" class="btn"></label>
-                        <label for="radio4" class="btn"></label>
-                        <label for="radio5" class="btn"></label>
-                    </div>
-                </div>-->
-                <!--<p style= "text-align: center" class="gallerydesc">
-                    Experience the authentic taste of Japan right here in Dayton, Ohio!<br>
-                    Cure your hunger at Osaka Japanese Steakhouse with our wide selection of fresh and delicious sushi and hibachi cuisine.
-
-
-                </p>
-             -->    
-               <!-- <main class = "grid-grid">
-                <article style="color:rgb(28,24,54)">
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <h2> Stomach growling? Looking for entertainment? </h2>
-                    <p>When you’re in the mood for high quality 
-                    Japanese cuisine that won't break your bank, 
-                    you want Osaka Japanese Steakhouse. At our eclectic restaurant, 
-                    food is prepared fresh at your table with your own personal 
-                    chef! Whether you're here for the fiery and fun show and the delicious appeal of a great hibachi meal or just craving fresh sushi and sashimi, you’re in for a treat.</p>
-                    
-                    </article> 
-                    <div class="gridwhole">
-                        
-                        <div class="pictext">
-                            <h2>Stomach growling? Looking for entertainment?</h2>
-                        
-                           
-                           
-                            When you’re in the mood for high quality 
-                            Japanese cuisine that won't break your bank, 
-                            you want Osaka Japanese Steakhouse. At our eclectic restaurant, 
-                            food is prepared fresh at your table with your own personal 
-                            chef! Whether you're here for the fiery and fun show and the delicious appeal of a great hibachi meal or just craving fresh sushi and sashimi, you’re in for a treat.
-                        
-                        </div>
-                        <br>
-                    <img src="hibachi fire.jpg" >
-                    </div>
-                    <div class="gridwhole-dark">
-                    
-                    <img src="Satellite_1752456830.jpg">
-                        <div class="pictext-right">
-                            <h2>Selections to please every palate.</h2>
-                            <p>Stop by today with your family and friends for a satisfying dinner! Our privately owned and operated steakhouse features a full-service sushi bar and dining room that serve the freshest fish, ingredients, and the best homemade sauces in all of Dayton, Ohio! 
-                    We also offer a full bar with HDTVs when you're feeling thirsty and want to watch your favorite sports teams.  
-                    </p>
-                     </div>
-                    </div>
-                    
-                    <div class="gridwhole">
-                        <div class="pictext">
-                            <li>Menu- Sushi, sashimi, appetizers, hibachi, desserts and more.</li>
-                 
-                            <li>Coupons/Specials - Senior and military discounts, Wine Tasting</li>
-                             
-                            <li>Gallery- View photos of our amazing food and convenient location!</li></p>
-                            </div>
-                                <img src="hawaii.jpg">
-                            
-                        </div>
-                    
-                        
-                    </article>
-                </main>-->
-            </div>
-           
-
-            
-            <!--<div id="contact" data-tab-content>
-                <div text-align="center">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4337.343956039312!2d-84.05581455769662!3d39.76288695968938!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88409c63ea7013e9%3A0x4863e531505bfd38!2sOsaka%20Japanese%20Steakhouse!5e0!3m2!1sen!2sus!4v1641138625151!5m2!1sen!2sus" width="99.5%" height="500" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                </div>
-             
-            </div>-->
-            
-           
-
-    
-         
-        
-    
-   
-<br>
-<!--<div class = "grid-grid-contact contact" style = "color:blanchedalmond">
-    
-    <article class="contact-box">
-        <h1>Contact Info</h1>
-                <b>Osaka Japanese Steakhouse</b><br>
-
-                2476 Commons Blvd<br>
-                Suite G<br>
-                Beavercreek,  OH   45431<br>
-                <b style = "color:rgb(152, 153, 224)">Email:</b>
-
-                osakasteakhouse.beavercreek@gmail.com<br>
-                <b style = "color:rgb(152, 153, 224)">Phone:</b>
-
-                937-320-1188<br>
-                Call us for carryout!<br>
-                <a href="https://www.facebook.com/Osaka-Japanese-Steakhouse-112963425391048/" target="_blank" style="text-decoration: none">
-                    <img src="facebook.jpg">
-                </a>
-               <a href="https://www.yelp.com/biz/osaka-japanese-steakhouse-beavercreek" target="_blank" style="text-decoration: none">
-                   <img src="yelp-icon-logo-png-29.jpg">
-               </a>
-            </article>
-            <article class="contact-box">
-                <h1>Business Hours</h1>
-                <b style = "color:rgb(250, 115, 255)">(All day menu for lunch and dinner)</b><br>
-                <b style = "color:rgb(152, 153, 224)">Monday to Friday-</b> 11:00 AM to 2:00 PM<br>
-                <b style = "color:rgb(152, 153, 224)">Monday to Thursday-</b> Company reopens from 4:30 PM to 9:00 PM<br>
-                <b style = "color:rgb(152, 153, 224)">Friday-</b> Company reopens from 4:30 PM to 10:00 PM<br>
-                <b style = "color:rgb(152, 153, 224)">Saturday-</b> 1:00 PM to 10:00 PM<br>
-                <b style = "color:rgb(152, 153, 224)">Sunday-</b> 12:00 PM to 9:00 PM
-                
-                <div class="cards">
-                    <img src = "visa.png" >
-                    <img src = "discover.png" >
-                    <img src = "mastercard.png" >
-                    <img src = "amex.png" >
-                    </div>
-            </article>
-</div>-->
+                    -->
 
 <div class="contact-bar">
     <div class = "contact-info">
         Contact Info <br><div class="hr-con"></div>
         <div class="contact-desc">
-            2476 Commons Blvd Suite G <br>
+            2476 Commons Blvd <span class= "suite">Suite G </span><div class="break"></div>
             Beavercreek, OH 45431 <br>
             Phone: 937-320-1188 <br>
             Call us for carryout! <br>
@@ -304,8 +161,8 @@
         Business Hours <br><div class="hr-biz"></div>
     
     <div class="contact-desc">
-        Mon - Thurs: 11:00 AM - 2:00 PM, 4:30 - 9:00 PM <br>
-        Fri: 11:00 AM - 2:00 PM, 4:30 - 10:00 PM <br>
+        Mon - Thurs: 11:00 AM - 2:00 PM, <span class= "time">4:30 - 9:00 PM </span><div class="break"></div>
+        Fri: 11:00 AM - 2:00 PM, <span class= "time">4:30 - 10:00 PM</span><div class="break"></div>
         Sat: 1:00 PM - 10:00 PM <br>
         Sun: 12:00 PM - 9:00 PM <br>
     </div>
@@ -315,35 +172,7 @@
 
 </div>
 
- <!-- automation for navigation bar-->
- <script type = "text/javascript">
-    var time=7000;
-    var counter=1;
-    function autoslideHome(){
-        document.getElementById('radio'+counter).checked = true;
-        counter++
-        if(counter > 5){
-            counter = 1;
-        }
-
-        setTimeout("autoslideHome()", time);
-    }
-    var timer=7000;
-    var menuCounter=1;
-    function autoslideMenu(){
-        document.getElementById('r'+menuCounter).checked = true;
-        menuCounter++
-        if(menuCounter > 5){
-            menuCounter = 1;
-        }
-        setTimeout("autoslideMenu()", timer);
-       
-        
-        
-    }
-    window.onload=autoslideHome(), autoslideMenu(); 
-
-</script>
+ 
 </body>
 
 

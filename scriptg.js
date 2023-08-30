@@ -21,32 +21,7 @@ function changeSlide(n) {
  
 }
 
-
-
-
-// Automatic slideshow
-intervalID = setInterval(() => {
-  changeSlide(1);
-}, 5000);
-
-
-
-// Stop the slideshow when the user hovers over the slideshow container
-const slideshowContainer = document.querySelector(".slideshow-container");
-slideshowContainer.addEventListener("mouseover", () => {
-  clearInterval(intervalID);
-});
-
-// Resume the slideshow when the user moves the cursor out of the slideshow container
-slideshowContainer.addEventListener("mouseout", () => {
-  intervalID = setInterval(() => {
-    changeSlide(1);
-  }, 5000);
-});
-
-// Show the initial slide
 showSlide(slideIndex);
-showSlideg(slideIndexg);
 
 function toggleDropdown() {
   document.getElementById("myDropdown").classList.toggle("show");
@@ -65,9 +40,3 @@ window.onclick = function(event) {
     }
   }
 };
-
-
-
-
-
-

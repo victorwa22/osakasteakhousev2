@@ -1,15 +1,24 @@
 <!DOCTYPE html>
 <html>
     <link rel="stylesheet" href="style.css">
-    <link href='https://fonts.googleapis.com/css?family=DM Sans' rel='stylesheet'>
+    <head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400&display=swap');
+      </style>
+      </head>
+    <script src="scriptg.js" defer></script>
 
 
     <div class ="blackbar">
         <div class = "logodiv">
             <a href="index.html"><img class ="logoimg" src="Osaka Logo.png" alt="Logo"></a>
         </div>
+        <div class="dropdown">
+            <div class="btnlines">
+                <button onclick="toggleDropdown()" class="dropbtn"><span></span></button> 
+            </div>
         <div class = "tabNames">
-            <ul class="tabs">
+            <ul id = "myDropdown" class="dropdown-content tabs">
                 <li class="tab"><a href="index.html">Home</a></li>
                 <li class="tab"><a href="menu.html">Menu</a></li>
                 <li class="tab"><a href="specials.html">Specials</a></li>
@@ -19,44 +28,76 @@
                 
                 
                 
-
+                
             </ul> 
 
 
+        </div>
         </div>
 
 
     </div>
     
-    <div id="gallery" data-tab-content>
-        <div class= "box">
-        <div class="container moreText">
-            <div class="pics">
-                <img src="Buckeye Roll.JPG">
-                <img src="rowdy raider roll.JPG">
-                <img src="Red Dragon.JPG">
-                <img src="Rock N' Roll.JPG">
-                <img src="caterpillar roll 1.JPG">
-            </div>
-            <div class="pics">
-                <img src="IMG_2349.JPG">
-                <img src="Sushi & Sashimi Boat A 2.JPG">
-                <img src="American Dream.JPG">
-                <img src="red had.jpg">
-                <img src="Boat A.JPG">
-            </div>
-            <div class="pics">
-                <img src="geisha.jpg">
-                <img src="GINGER SALMON 2.JPG">
-                <img src="Satellite_1752456830.jpg">
-                <img src="unc.jpg">
-                
-                
-            </div>
-            </div>
-          
-                
-                </div>
+    
+    <div class="slideshow-containerg">
+        <div class="slideshow">
+            <img class= "slide" src="images/Boat A.JPG" alt="Boat A">
+            <img class= "slide"   src="images/Buckeye Roll.JPG" alt="Buckeye Roll">
+            <img class= "slide"   src="images/caterpillar roll 1.JPG" alt="Caterpillar Roll">
+            <img class= "slide"   src="images/geisha.jpg" alt="Geisha">
+            <img class= "slide"   src="images/American Dream.JPG" alt="American Dream">
+            <img class= "slide"   src="images/GINGER SALMON 2.JPG" alt="Ginger Salmon">
+            <img class= "slide"   src="images/hibachi rice.jpg" alt="Hibachi Rice">
+            <img class= "slide"   src="images/IMAG0041.jpg" alt="Hibachi Fire">
+            <img class= "slide"   src="images/IMAG0047.jpg" alt="Hibachi Fire">
+            <img class= "slide"   src="images/IMG-3701.jpg" alt="Hibachi Fire">
+            <img class= "slide"   src="images/IMG_2349.JPG" alt="Hibachi Fire">
+            <img class= "slide"   src="images/onion rings.jpg" alt="Onion Rings">
+            <img class= "slide"   src="images/Red Dragon.JPG" alt="Red Dragon Roll">
+            <img class= "slide"   src="images/red had.jpg" alt="Red Had Roll">
+            <img class= "slide"   src="images/rice on oranges.jpg" alt="Rice on Oranges">
+            <img class= "slide"   src="images/rice with beef and chicken.jpg" alt="Beef and Chicken Rice">
+            <img class= "slide"   src="images/Rock N' Roll.JPG" alt="Rock N' Roll">
+            <img class= "slide"   src="images/rowdy raider roll.JPG" alt="Rowdy Raider Roll">
+            <img class= "slide"   src="images/woosaa roll 1.jpg" alt="Woosaa Roll">
+            <img class= "slide"   src="images/wproll.JPG" alt="Wright Patterson Roll">
+            <img class= "slide"   src="images/imageedit_12_7617094555.jpg" alt="Hibachi Fire">
+            <img class= "slide"   src="images/rice heart.jpg" alt="Rice Heart">
+            <img class= "slide"   src="images/Sushi & Sashimi Boat A 2.JPG" alt="Sushi & Sashimi Boat">
+        </div>
+      
+        <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+        <a class="next" onclick="changeSlide(1)">&#10095;</a>
     </div>
 
+    <div class="contact-bar">
+        <div class = "contact-info">
+            Contact Info <br><div class="hr-con"></div>
+            <div class="contact-desc">
+                2476 Commons Blvd Suite G <br>
+                Beavercreek, OH 45431 <br>
+                Phone: 937-320-1188 <br>
+                Call us for carryout! <br>
+            </div>
+        </div>
+    
+    
+    
+    
+       
+        <div class="bizhrs">
+            Business Hours <br><div class="hr-biz"></div>
+        
+        <div class="contact-desc">
+            Mon - Thurs: 11:00 AM - 2:00 PM, 4:30 - 9:00 PM <br>
+            Fri: 11:00 AM - 2:00 PM, 4:30 - 10:00 PM <br>
+            Sat: 1:00 PM - 10:00 PM <br>
+            Sun: 12:00 PM - 9:00 PM <br>
+        </div>
+    
+    
+    
+    
+    </div>
+    
 </html>

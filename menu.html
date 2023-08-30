@@ -1,16 +1,24 @@
 <!DOCTYPE html>
 <html>
     <link rel="stylesheet" href="style.css">
-    <link href='https://fonts.googleapis.com/css?family=DM Sans' rel='stylesheet'>
-
-
+    
+    <head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&display=swap');
+      </style>
+    </head>
+    <script src="script.js" defer></script>
     <div class ="blackbar">
         <div class = "logodiv">
             <a href="index.html"><img class ="logoimg" src="Osaka Logo.png" alt="Logo"></a>
 
         </div>
+        <div class="dropdown">
+            <div class="btnlines">
+                <button onclick="toggleDropdown()" class="dropbtn"><span></span></button> 
+            </div>
         <div class = "tabNames">
-            <ul class="tabs">
+            <ul id = "myDropdown" class="dropdown-content tabs">
                 <li class="tab"><a href="index.html">Home</a></li>
                 <li class="activet"><a href="menu.html">Menu</a></li>
                 <li class="tab"><a href="specials.html">Specials</a></li>
@@ -29,79 +37,73 @@
 
     </div>
 
-    <div id="Menu" data-tab-content>
-        <div class="slidershow middle">
-            <div class="slides">
-            <input type="radio" name="r" id="r1" checked>
-            <input type="radio" name="r" id="r2" >
-            <input type="radio" name="r" id="r3">
-            <input type="radio" name="r" id="r4">
-            <input type="radio" name="r" id="r5">
-            
-                <div class="slide s1">
-                    <img src="hibachi rice 2.jpg" alt="">
-                </div>
-                <div class="slide">
-                    <img src="onion rings.jpg" alt="">
-            </div>
-            <div class="slide">
-                <img src="IMAG0047.jpg" alt="">
-            </div>
-                <div class="slide">
-                <img src="rice on oranges.jpg" alt="">
-            </div>
-                    <div class="slide">
-                    <img src="IMAG0041.jpg" alt="">
-                </div>
-            
-            
-            
-            <div class="nav-auto">
-                <div class ="autobtn1">
-            </div>
-            <div class ="autobtn2">
-            </div>
-            <div class ="autobtn3">
-            </div>
-            <div class ="autobtn4">
-            </div>
-            <div class ="autobtn5">
-            </div>
-        </div>
-    </div>
-        
-
-            <div class="navigation">
-                <label for="r1" class="btn"></label>
-                <label for="r2" class="btn"></label>
-                <label for="r3" class="btn"></label>
-                <label for="r4" class="btn"></label>
-                <label for="r5" class="btn"></label>
-            </div>
-        </div>
-     <main class="grid-grid">
-        <div class="gridwhole-dark">
-            <div class = "pictext-only">
-        <h2>Get your day going with a great meal!</h2><br>
-            Enjoy sushi that tastes fresh off the boat and juicy hibachi steak, chicken, and seafood dinners cooked by our renowned chefs! You'll find something for everyone with our wide array of dinner options. We even offer special selections for kids so you can ensure that everyone in the family will be satisfied.
+    
+            <div class="menu">
+                <div class = "menulhalf">
+                <div class="menuhead">
+                Endless selections to satisfy <br>your cravings:
+           
+                <div class="menudesc">
+            Enjoy sushi that tastes fresh off the boat and juicy hibachi steak, chicken, and seafood dinners cooked by our renowned chefs!
             
                 And don’t forget to ask about our private dining room for large parties to celebrate your birthday, anniversary, graduation or any other special occasion. You won't want to turn to another restaurant when you’re in the mood for authentic, mouthwatering Japanese cuisine!
-            
-                <p style="text-align:center">Endless selections to satisfy your cravings:</p>
-                <div class = "menus">
-                    <a href = "dine in menu.pdf" target="_blank">Dine-In Menu</a><br><br>
-                    <a href = "to go menu.pdf" target="_blank">To-Go Menu</a>
                 </div>
+            </div>
+                <div class="menubtns">
+                    
+                        <a href = "dine in menu.pdf" target="_blank"><button class = "menus1">Dine-In Menu</button></a>
+                    </button>
+                    
+                        <a href = "to go menu.pdf" target="_blank"><button class = "menus2">To-Go Menu</button></a>
+                    </button>
+                </div>
+            </div>
+                <div class="slideshow-container">
+                    <div class="slideshow">
+                      <img class = "slide" src="images/GINGER SALMON 2.JPG" alt="Ginger Salmon" height= "400px">
+                      <img class = "slide" src="images/hibachi rice.jpg" alt="Chicken Hibachi Rice">
+                      <img class = "slide" src="images/IMAG0047.jpg" alt="Red Had Roll">
+                      <img class = "slide" src="images/IMAG0041.jpg" alt="Rock N' Roll">
+                      <img class = "slide" src="images/onion rings.jpg" alt="Onion Rings">
+                    </div>
+                  
+                    <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+                    <a class="next" onclick="changeSlide(1)">&#10095;</a>
+                </div>
+            
+            </div>
+            
+       
+    
+<div class="contact-bar">
+    <div class = "contact-info">
+        Contact Info <br><div class="hr-con"></div>
+        <div class="contact-desc">
+            2476 Commons Blvd Suite G <br>
+            Beavercreek, OH 45431 <br>
+            Phone: 937-320-1188 <br>
+            Call us for carryout! <br>
         </div>
-        </div>
-    </main>
     </div>
 
-    <div id="specials" data-tab-content>
-        <div class="gridwhole">
-            <div class= "pictext-only">
-            <h2>Great meals at prices you can smile about.</h2>
-At Osaka Japanese Steakhouse, we know that amazing food shouldn't have to cost you an arm and a leg.
-We offer specials and coupons to our valued customers! Whether you're eating in with your family at our Hibachi grill or calling for carryout sushi, our coupons and specials will be able to accommodate your dining pleasure.
+
+
+
+   
+    <div class="bizhrs">
+        Business Hours <br><div class="hr-biz"></div>
+    
+    <div class="contact-desc">
+        Mon - Thurs: 11:00 AM - 2:00 PM, 4:30 - 9:00 PM <br>
+        Fri: 11:00 AM - 2:00 PM, 4:30 - 10:00 PM <br>
+        Sat: 1:00 PM - 10:00 PM <br>
+        Sun: 12:00 PM - 9:00 PM <br>
+    </div>
+
+
+
+
+</div>
+</div>
 
 </html>

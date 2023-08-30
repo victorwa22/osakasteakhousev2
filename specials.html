@@ -1,16 +1,24 @@
 <!DOCTYPE html>
 <html>
     <link rel="stylesheet" href="style.css">
-    <link href='https://fonts.googleapis.com/css?family=DM Sans' rel='stylesheet'>
-
+    <head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&display=swap');
+      </style>
+    </head>
+    <script src="script.js" defer></script>
 
     <div class ="blackbar">
         <div class = "logodiv">
             <a href="index.html"><img class ="logoimg" src="Osaka Logo.png" alt="Logo"></a>
 
         </div>
+        <div class="dropdown">
+            <div class="btnlines">
+                <button onclick="toggleDropdown()" class="dropbtn"><span></span></button> 
+            </div>
         <div class = "tabNames">
-            <ul class="tabs">
+            <ul id = "myDropdown" class="dropdown-content tabs">
                 <li class="tab"><a href="index.html">Home</a></li>
                 <li class="tab"><a href="menu.html">Menu</a></li>
                 <li class="activet"><a href="specials.html">Specials</a></li>
@@ -20,20 +28,58 @@
                 
                 
                 
-
+                
             </ul> 
 
 
         </div>
+        </div>
 
 
     </div>
-    Sink your teeth into our delicious deals:
-                </div>
-                <br>
-                </div>
-                <br>
-<img src = "special 1.jpg" class="center"> <br>
-<img src = "speical 2.png" class="center">
+
+    <div class="specs">
+       
+            <div class=" spectext">
+                Indulge in our delicious <br>deals and events:
             </div>
+        
+        <div class="specials"> 
+            <img src = "special 1.jpg"> <br><br>
+            <img src = "speical 2.png">
+        </div>     
+    </div><br>
+
+
+
+            <div class="contact-bar">
+                <div class = "contact-info">
+                    Contact Info <br><div class="hr-con"></div>
+                    <div class="contact-desc">
+                        2476 Commons Blvd Suite G <br>
+                        Beavercreek, OH 45431 <br>
+                        Phone: 937-320-1188 <br>
+                        Call us for carryout! <br>
+                    </div>
+                </div>
+            
+            
+            
+            
+               
+                <div class="bizhrs">
+                    Business Hours <br><div class="hr-biz"></div>
+                
+                <div class="contact-desc">
+                    Mon - Thurs: 11:00 AM - 2:00 PM, 4:30 - 9:00 PM <br>
+                    Fri: 11:00 AM - 2:00 PM, 4:30 - 10:00 PM <br>
+                    Sat: 1:00 PM - 10:00 PM <br>
+                    Sun: 12:00 PM - 9:00 PM <br>
+                </div>
+            
+            
+            
+            
+            </div>
+            
 </html>
