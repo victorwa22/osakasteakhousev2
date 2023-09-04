@@ -589,10 +589,7 @@ li a {
 
 @media (max-width:1610px){
 
-  .slideshow-container{
-    display: flex;
-    align-items: center;
-  }
+  
   .intro2pic{
     
     display: flex;
