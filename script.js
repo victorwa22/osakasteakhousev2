@@ -1,7 +1,9 @@
 let slideIndex = 0;
 let slideIndexg= 0;
+let intervalID;
 const slides = document.querySelectorAll(".slide");
-const slidesg = document.querySelectorAll(".slideshowg img");
+const slideshowContainer = document.querySelector(".slideshow-container");
+let slideshowRunning = false;
 
 function showSlide(n) {
   slideIndex = (n + slides.length) % slides.length;
@@ -18,35 +20,93 @@ function showSlide(n) {
 function changeSlide(n) {
   
   showSlide(slideIndex + n);
+  
  
+}
+
+
+/*slideshowContainer.addEventListener("mouseover", () => {
+  clearInterval(intervalID);
+});
+
+slideshowContainer.addEventListener("mouseout", () => {
+  intervalID = setInterval(() => {
+    changeSlide(1);
+  }, 5000);
+});*/
+
+function mouseoutss() {
+  intervalID = setInterval(() => {
+    changeSlide(1);
+  }, 5000);
+}
+function mouseoverss() {
+  clearInterval(intervalID);
 }
 
 
 
 
-// Automatic slideshow
-intervalID = setInterval(() => {
-  changeSlide(1);
-}, 5000);
-
-
-
-// Stop the slideshow when the user hovers over the slideshow container
-const slideshowContainer = document.querySelector(".slideshow-container");
-slideshowContainer.addEventListener("mouseover", () => {
-  clearInterval(intervalID);
-});
-
-// Resume the slideshow when the user moves the cursor out of the slideshow container
-slideshowContainer.addEventListener("mouseout", () => {
+function startSlideshow() {
+  if (!slideshowRunning) { 
   intervalID = setInterval(() => {
     changeSlide(1);
   }, 5000);
-});
+  slideshowRunning = true;
+ 
+ 
+}
 
-// Show the initial slide
+}
+
+function stopSlideshow() {
+  if (slideshowRunning){
+    clearInterval(intervalID);
+    slideshowRunning = false;
+    
+  } 
+
+}
+
+
+function checkScreenSize() {
+  if (window.innerWidth < 990) {
+    stopSlideshow();
+    slideshowContainer.removeEventListener("mouseover", mouseoverss
+    );
+    
+    slideshowContainer.removeEventListener("mouseout", mouseoutss
+    );
+   
+    
+    } 
+  else {
+    startSlideshow();
+    slideshowContainer.addEventListener("mouseover", mouseoverss
+    );
+    
+    slideshowContainer.addEventListener("mouseout", mouseoutss
+    );
+   
+  }
+}
+
+
+// Automatic slideshow
+checkScreenSize();
+window.addEventListener("resize", checkScreenSize);
 showSlide(slideIndex);
-showSlideg(slideIndexg);
+
+
+
+
+
+
+
+
+
+
+
 
 function toggleDropdown() {
   document.getElementById("myDropdown").classList.toggle("show");
