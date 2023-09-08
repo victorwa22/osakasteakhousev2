@@ -8,9 +8,8 @@ body{
   background-image:url("images/osaka\ background.jpeg");
   background-attachment:fixed;
   background-position-x: 0px; 
-  
-  
   background-repeat:no-repeat;
+  text-rendering: optimizeLegibility;
  
   
 
@@ -310,7 +309,7 @@ li a {
   justify-content: center;
   align-items: center;
   color:black;
-  margin-top:65px;
+  margin-top:75px;
   margin-left:13%;
   width:12%; /*button width 250px*/
   padding:10px;
