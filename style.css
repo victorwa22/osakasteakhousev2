@@ -820,6 +820,7 @@ footer{
 
 .tabs a:link {
   color:black;
+  font-weight:500;
 }
 .tab a:visited {
   color:black;
@@ -843,6 +844,7 @@ footer{
 
 .tabs{
   width:100px;
+
 }
 
 
