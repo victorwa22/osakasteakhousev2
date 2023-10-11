@@ -447,7 +447,7 @@ li a {
   width: 90%;
   display:grid;
   
-  padding-top: 80px;
+  padding-top: 0px;
   grid-template-columns: 1fr 1fr;
   font-size:38px;
   padding-left:5%;
@@ -645,7 +645,7 @@ footer{
   .menubtns{
     display:flex;
     flex-direction:column;
-    padding-top:150px;
+    padding-top:30px;
     
     
   }
@@ -796,7 +796,7 @@ footer{
 
 @media (max-width:1074px){
   .menubtns{
-    padding-top:200px;
+    padding-top:30px;
   }
 }
 
