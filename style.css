@@ -299,9 +299,11 @@ li a {
 
 
 .menub:hover{
-  background-color: #8AA7DA;
+  background-color: #36317D;
   /*text-decoration: underline;*/
   cursor: pointer;
+  color:white;
+  transition: 300ms ease-out 1ms
 }
 
 .menub{
@@ -472,7 +474,9 @@ li a {
   cursor: pointer;
 }
 .menus1:hover, .menus2:hover{
-  background-color:#8AA7DA;
+  background-color:#36317D;
+  color:white;
+  transition: 300ms ease-out 1ms
 }
 
 .menus1, .menus2, a:link{
@@ -806,11 +810,13 @@ footer{
 
   .intro2desc{
     width:100%;
-    font-size:31px;
+    font-size:33px;
+    line-height:1.4em;
   }
 
   .intro3desc{
-    font-size:31px;
+    font-size:33px;
+    line-height:1.4em;
     width:92%;
   }
   .logodiv{
@@ -1110,7 +1116,7 @@ footer{
 
 
 .menudesc{
-  font-size:31px;
+  font-size:33px;
   width:95%; 
 }
 
