@@ -14,8 +14,7 @@
         </script>
         <link rel="stylesheet" href="style.css">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&display=swap');
-        
+        @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap');
       </style>
     </head>
     <script src="script.js" defer></script>
@@ -23,6 +22,7 @@
     
   
     <body>
+<<<<<<< Updated upstream
         
        
            
@@ -49,50 +49,119 @@
                 
                 
             </ul> 
+=======
+      <header class="site-header">
+        <nav class="nav">
+          <a href="index.html" class="nav-logo">
+            <img src="Osaka Logo.png" alt="Osaka Japanese Steakhouse">
+          </a>
+          <button class="nav-toggle dropbtn" onclick="toggleDropdown()" aria-label="Toggle navigation">
+            <span></span>
+          </button>
+          <ul id="myDropdown" class="nav-links">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="specials.html">Specials</a></li>
+            <li><a href="contacts.html">Contact</a></li>
+          </ul>
+        </nav>
 
+        <section class="hero">
+          <div class="hero-text">
+            <p class="hero-kicker">Introducing Dayton to a</p>
+            <h1 class="hero-title">
+              New Level
+              <span class="hero-underline"></span>
+            </h1>
+            <p class="hero-subtitle">of Sushi and Hibachi Excellence</p>
+            <a href="menu.html" class="btn-primary">View Menu</a>
+          </div>
+>>>>>>> Stashed changes
 
-        </div>
-        </div>
-
-    </div>
-    <div class = "intro">
-        <div class="introtext">
-            <div class="introtext1">
-                Introducing Dayton to a 
-            </div>
-            <div class="newlevel">
-                 New Level<div class="hr1"></div><div class="hr2"></div>
-            </div>
-            <div class="introtext2">
-                of Sushi and Hibachi Excellence
-            </div>
-            
-                <a href="menu.html"><button class = "menub">View Menu</button></a>
-            
-        </div>
-        <div class="slideshow-container" id="second">
+          <div class="hero-media">
             <div class="slideshow">
-              <img class= "slide" src="images/imageedit_12_7617094555.jpg" alt="Hibachi Fire">
-              <img class= "slide" src="images/American Dream.JPG" alt="American Dream">
-              <img class= "slide" src="images/red had.jpg" alt="Red Had Roll">
-              <img class= "slide" src="images/Rock N' Roll.JPG" alt="Rock N' Roll">
-              <img class= "slide" src="images/Sushi & Sashimi Boat A 2.JPG" alt="Sushi & Sashimi Boat">
+              <img class="slide active" src="images/imageedit_12_7617094555.jpg" alt="Hibachi Fire">
+              <img class="slide" src="images/American Dream.JPG" alt="American Dream">
+              <img class="slide" src="images/red had.jpg" alt="Red Had Roll">
+              <img class="slide" src="images/Rock N' Roll.JPG" alt="Rock N' Roll">
+              <img class="slide" src="images/Sushi & Sashimi Boat A 2.JPG" alt="Sushi & Sashimi Boat">
+              <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+              <a class="next" onclick="changeSlide(1)">&#10095;</a>
             </div>
-          
-            <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
-            <a class="next" onclick="changeSlide(1)">&#10095;</a>
-        </div>
+          </div>
+        </section>
+      </header>
 
+      <main>
+        <section class="feature-row">
+          <div class="feature-copy">
+            <p class="eyebrow">Osaka for every occasion</p>
+            <h2>All the ways we keep your night memorable</h2>
+            <p class="feature-lead">
+              From fiery hibachi tables to quiet sushi dinners, we bring the show, the flavor, and the fun every time you visit.
+            </p>
+            <p class="feature-body">
+              Celebrate milestones, date nights, or just a craving for rolls and steak. Our chefs cook right in front of you, using the freshest seafood and premium cuts so your whole party leaves smiling.
+            </p>
+          </div>
+          <div class="feature-media">
+            <img src="images/wproll.JPG" alt="Signature Osaka sushi roll">
+          </div>
+        </section>
 
-    </div><br>
+        <section class="favorites">
+          <header class="favorites-header">
+            <p class="eyebrow">Osaka favorites</p>
+            <h2>Dive into the fan favorites</h2>
+            <p>
+              Ordered often and always a hit&mdash;these are the plates our guests can&rsquo;t stop talking about.
+            </p>
+          </header>
 
-    <div class="intro2whole">
-        <div class="intro2">
+          <div class="favorites-grid">
+            <article class="favorite-card">
+              <div class="favorite-image">
+                <img src="images/GINGER SALMON 2.JPG" alt="Ginger Salmon entrée">
+              </div>
+              <div class="favorite-content">
+                <h3>Ginger Salmon Hibachi</h3>
+                <p>
+                  Grilled salmon with house ginger sauce, seasonal vegetables, and steamed rice cooked hot off the hibachi grill.
+                </p>
+                <a href="menu.html" class="favorite-link">View menu &rarr;</a>
+              </div>
+            </article>
 
-        <div class = "intro2pic">
-            <img src="images/wproll.JPG" alt="">
+            <article class="favorite-card">
+              <div class="favorite-image">
+                <img src="images/Sushi & Sashimi Boat A 2.JPG" alt="Sushi and sashimi boat">
+              </div>
+              <div class="favorite-content">
+                <h3>Sushi &amp; Sashimi Boat</h3>
+                <p>
+                  Chef&rsquo;s selection of rolls, nigiri, and sashimi on a shareable boat&mdash;perfect for the whole table.
+                </p>
+                <a href="menu.html" class="favorite-link">View menu &rarr;</a>
+              </div>
+            </article>
 
+            <article class="favorite-card">
+              <div class="favorite-image">
+                <img src="images/IMAG0047.jpg" alt="Specialty roll platter">
+              </div>
+              <div class="favorite-content">
+                <h3>Osaka Signature Rolls</h3>
+                <p>
+                  Colorful, over-the-top specialty rolls layered with sauces and toppings for the ultimate sushi spread.
+                </p>
+                <a href="menu.html" class="favorite-link">View menu &rarr;</a>
+              </div>
+            </article>
+          </div>
+        </section>
+      </main>
 
+<<<<<<< Updated upstream
         </div>
             <div class = "intro2text">
                 Stomach growling? <br>
@@ -155,6 +224,9 @@
                 
                 </body>
 <div class="contact-bar">
+=======
+      <div class="contact-bar">
+>>>>>>> Stashed changes
     <div class = "contact-info">
         Contact Info <br><div class="hr-con"></div>
         <div class="contact-desc">

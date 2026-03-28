@@ -1,6 +1,11 @@
 import { useState } from 'react'
 import './App.css'
 
+const MENU_DINE_IN_URL =
+  'https://drive.google.com/file/d/1-4QADWJxZr3Z_bBCGm22CUZ2tHfpkl6z/view?usp=sharing'
+const MENU_TO_GO_URL =
+  'https://drive.google.com/file/d/1qh9sDo8Roo7BM_a_j7mKoiy5Ua0JYeAu/view?usp=sharing'
+
 const MENU_CAROUSEL = {
   hibachi: [
     {
@@ -8,7 +13,7 @@ const MENU_CAROUSEL = {
       description: 'Grilled salmon finished with house ginger sauce and steamed rice straight from the grill.',
       image: '/images/GINGER SALMON 2.JPG',
       alt: 'Ginger Salmon hibachi',
-      menuHref: '/menus/dine in menu.pdf',
+      menuHref: MENU_DINE_IN_URL,
       linkLabel: 'View menu',
     },
     {
@@ -16,7 +21,7 @@ const MENU_CAROUSEL = {
       description: 'Your favorite hibachi dishes — steak, chicken, shrimp, and more from the grill with the show.',
       image: '/images/hibachi rice.jpg',
       alt: 'Hibachi rice',
-      menuHref: '/menus/dine in menu.pdf',
+      menuHref: MENU_DINE_IN_URL,
       linkLabel: 'View menu',
      
     },
@@ -25,7 +30,7 @@ const MENU_CAROUSEL = {
       description: 'All the bold hibachi flavors you love,  cooked fresh in our kitchen.',
       image: '/images/rice on oranges.jpg',
       alt: 'Hibachi rice and citrus',
-      menuHref: '/menus/dine in menu.pdf',
+      menuHref: MENU_DINE_IN_URL,
       linkLabel: 'View menu',
     },
   ],
@@ -35,7 +40,7 @@ const MENU_CAROUSEL = {
       description: 'A crowd-pleasing specialty roll with bold flavors and our signature touch.',
       image: "/images/Rock N' Roll.JPG",
       alt: 'Rock N Roll sushi roll',
-      menuHref: '/menus/dine in menu.pdf',
+      menuHref: MENU_DINE_IN_URL,
       linkLabel: 'View menu',
     },
     {
@@ -43,7 +48,7 @@ const MENU_CAROUSEL = {
       description: 'A house favorite roll with vibrant flavor and top-tier ingredients.',
       image: '/images/red had.jpg',
       alt: 'Red Had roll',
-      menuHref: '/menus/dine in menu.pdf',
+      menuHref: MENU_DINE_IN_URL,
       linkLabel: 'View menu',
     },
     {
@@ -51,7 +56,7 @@ const MENU_CAROUSEL = {
       description: 'Savory, satisfying, and unforgettable.',
       image: '/images/woosaa roll 1.jpg',
       alt: 'Woosaa roll',
-      menuHref: '/menus/dine in menu.pdf',
+      menuHref: MENU_DINE_IN_URL,
       linkLabel: 'View menu',
     },
   ],
@@ -115,18 +120,18 @@ function App() {
                 </p>
                 <div className="hero-buttons">
                   <a
-                    href="/menus/dine in menu.pdf"
+                    href={MENU_DINE_IN_URL}
                     className="btn btn-primary"
                     target="_blank"
-                    rel="noreferrer"
+                    rel="noopener noreferrer"
                   >
                     Dine-In Menu
                   </a>
                   <a
-                    href="/menus/to go menu.pdf"
+                    href={MENU_TO_GO_URL}
                     className="btn btn-secondary"
                     target="_blank"
-                    rel="noreferrer"
+                    rel="noopener noreferrer"
                   >
                     To-Go Menu
                   </a>
@@ -211,18 +216,18 @@ function App() {
             </div>
             <div className="menu-carousel__cta">
               <a
-                href="/menus/dine in menu.pdf"
+                href={MENU_DINE_IN_URL}
                 className="btn btn-primary"
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener noreferrer"
               >
                 Dine-In Menu
               </a>
               <a
-                href="/menus/to go menu.pdf"
+                href={MENU_TO_GO_URL}
                 className="btn btn-outline"
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener noreferrer"
               >
                 To-Go Menu
               </a>
